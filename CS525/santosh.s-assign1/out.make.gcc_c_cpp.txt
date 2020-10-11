@@ -1,0 +1,7 @@
+echo Compile with C and C++
+Compile with C and C++
+gcc -c splitter.c -Wall -Wextra -ansi -pedantic
+g++ -c driver.cpp -Wall -Wextra  -ansi -pedantic
+driver.cpp: In function 'int main(int, char**)':
+driver.cpp:8: warning: deprecated conversion from string constant to 'char*'
+g++ -o gcc1.exe splitter.o driver.o -Wl,--enable-auto-import -Wall -Wextra  -ansi -pedantic

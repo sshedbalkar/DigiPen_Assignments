@@ -1,0 +1,17 @@
+echo Compile all with C++
+Compile all with C++
+bcc32 -c -w -P -tWC driver.cpp
+Borland C++ 5.82 for Win32 Copyright (c) 1993, 2005 Borland
+driver.cpp:
+bcc32 -c -w -P splitter.c
+Borland C++ 5.82 for Win32 Copyright (c) 1993, 2005 Borland
+splitter.c:
+Warning W8060 splitter.c 37: Possibly incorrect assignment in function SplitFile(char *,char *,unsigned int)
+Warning W8060 splitter.c 69: Possibly incorrect assignment in function SplitFile(char *,char *,unsigned int)
+Warning W8004 splitter.c 24: 'bytes_read' is assigned a value that is never used in function SplitFile(char *,char *,unsigned int)
+Warning W8060 splitter.c 163: Possibly incorrect assignment in function JoinFiles(char * *,char *)
+Warning W8060 splitter.c 190: Possibly incorrect assignment in function JoinFiles(char * *,char *)
+Warning W8004 splitter.c 150: 'bytes_read' is assigned a value that is never used in function JoinFiles(char * *,char *)
+bcc32 -ebcc2.exe driver.obj splitter.obj
+Borland C++ 5.82 for Win32 Copyright (c) 1993, 2005 Borland
+Turbo Incremental Link 5.69 Copyright (c) 1997-2005 Borland

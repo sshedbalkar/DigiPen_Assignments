@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Unofficial Grades Report
+</title>
+    <style type="text/css">
+        .lnkprint{font-family:Verdana,Arial,Tahoma,Sans-Serif;font-size:7.5pt;text-decoration:none;color:#2d2d2d;font-style:italic;font-weight:bold;}
+		.lnkprint:hover{text-decoration:none;}
+		.slinksilver
+        {
+	        text-decoration:none;
+	        font-family:Tahoma;
+	        font-size:8pt;
+	        color:#4f4f4f;
+	        font-weight:bold;
+        }
+        .slinksilver:link
+        {
+	        text-decoration:none;
+	        color:#4f4f4f;
+        }
+        .slinksilver:hover
+        {
+	        text-decoration:underline;
+	        color:#868686;
+        }
+        .slinksilver:active
+        {
+	        text-decoration:none;
+	        color:#4f4f4f;
+        }
+        .slinksilver:visited
+        {
+	        text-decoration:none;
+	        color:#4f4f4f;
+        }
+    </style>
+<link href="MyGrades.aspx_files/GeneralStyle.css" rel="stylesheet" type="text/css"><style type="text/css">     body{margin:0 0 0 0; padding:0 0 0 0}    .srsTitle {font-family:Book Antiqua, Times New Roman; font-size:16pt; font-weight:bold;}    .srsDatabase {font-family:Tahoma,Arial,Verdana; font-size:14pt; font-weight:bold;}    .styleLogout{text-decoration:underline;color:blue;font-family:Tahoma,Arial,Verdana; font-size:8pt;font-weight:bold;letter-spacing:1;}    .menuOptionActiveSTD{background-color:#003366;font-weight:bold;cursor:default;margin:0 0 0 10px;padding:5px 5px 5px 5px;		              font-family:Verdana,Arial,Tahoma,Sans-Serif;font-size:8pt;color:white;border-style:solid;border-width:1;border-color:#7f9db9;			            border-bottom-style:none;}   .menuOptionInactiveSTD{background-color:#cccccc;font-weight:bold;cursor:default;margin:0 0 0 10px;padding:5px 5px 5px 5px;			            font-family:Verdana,Arial,Tahoma,Sans-Serif;font-size:8pt;color:#003366;border-style:solid;border-width:1;border-color:#cccccc;			            border-bottom-style:none;}    .stylemenuSubmenu {position:absolute;z-index:10; margin:0 0 0 10px; padding:0 0 0 0;}    .listmenu{margin:0 0 0 0px; padding: 0 0 0 0; list-style-type:none;}    .listmenu li{margin: 0px 0 0px 0;padding: 2px 2px 2px 2px;background-color:#003366;	             border-style:solid;border-width:1;border-color:#7f9db9;border-top-style:none;}    .listmenu a{font-family:Verdana,Arial,Tahoma,Sans-Serif;font-size:8pt;font-weight:normal;text-decoration:none; color:white;	            padding:3px 3px 3px 3px;margin:0 0 0 0;width:100%;}    .listmenu a:hover{text-decoration:none;background-color:lavender;color:#003366;width:100%;}    .unreadcell {font-family:Verdana,Arial,Tahoma,Sans-Serif;font-size:8pt;font-weight:normal;}    .unreadmsg {font-size:90%;padding:0 10px 0 10px;background-color:red;color:white;}    .pageTitleSTD td{font-weight: bold;font-size: 8pt;font-family: Verdana, Arial, Sans-Serif, Tahoma;padding-right: 7px;	padding-left: 7px;padding-bottom: 5px;padding-top: 5px;color: #2f2f2f;background-color:Highlight;}</style><script type="text/javascript">function InsideMenu(menu){ OutsideMenu('optionMyProfile',null); OutsideMenu('optionServices',null); OutsideMenu('optionClasses',null); OutsideMenu('optionBB',null); OutsideMenu('optionRequests',null); OutsideMenu('optionDownload',null); var m = document.getElementById(menu); if (m!=null) {    m.className='menuOptionActiveSTD';    var s = document.getElementById(menu+"Menu");    if (s!=null)	    s.style.display = "block"; }}function OutsideMenu(menu,event){ var s = document.getElementById(menu+"Menu"); if (event!=null) {    var x = event.clientX;    var y = event.clientY;    if (x>=s.offsetLeft+5 && x<=s.offsetLeft+s.clientWidth-5 && y>=s.offsetTop-5 	    && y<=s.offsetTop+s.clientHeight-5)	    return false; } var m = document.getElementById(menu); if (m!=null) {    m.className='menuOptionInActiveSTD';    if (s!=null)	    s.style.display = "none"; }}function OpenLink(lnk){ window.open(lnk,"_blank","location=no,directories=no,fullscreen=no,status=no,toolbar=no,scrollbars=1,resizable=1,width=600,height=400",true);}</script></head>
+<body>
+    
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+	<tbody><tr>
+		<td colspan="2">
+			<table cellpadding="1" cellspacing="0" bgcolor="silver" border="0" width="100%">
+				<tbody><tr>
+					<td>
+						<table cellpadding="0" cellspacing="0" bgcolor="#cccccc" border="0" width="100%">
+							<tbody><tr>
+								<td>
+									<table cellpadding="0" cellspacing="0" bgcolor="#cccccc" border="0">
+										<tbody><tr>
+											<td>
+												<div id="optionMyProfile" class="menuOptionInActiveSTD" onmouseover="InsideMenu(this.id);" onmouseout="OutsideMenu(this.id,event);">
+													<span>My Profile</span>
+												</div>
+												<div id="optionMyProfileMenu" class="stylemenuSubmenu" style="width:200px;display:none;" onmouseout="OutsideMenu('optionMyProfile',event);">
+													<ul class="listmenu">
+														<li><a href="https://management.digipen.edu/srs-app/students/Secured/MyRecord.aspx">My Record</a></li>
+														<li><a href="http://management.digipen.edu/srs-app/students/AddressContactInformation.aspx">Contact Information</a></li>
+														<li><a href="https://management.digipen.edu/srs-app/students/Secured/ResetPassword.aspx">Reset Password</a></li>
+														<li><a href="http://management.digipen.edu/srs-app/students/CurrentPastSchedules.aspx">Class Schedules</a></li>
+														<li><a href="https://management.digipen.edu/srs-app/students/Secured/DegreeAudit.aspx">Degree Audit</a></li>
+														<li><a href="https://management.digipen.edu/srs-app/students/Secured/MyGrades.aspx">Grades Report</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<div id="optionClasses" class="menuOptionInActiveSTD" onmouseover="InsideMenu(this.id);" onmouseout="OutsideMenu(this.id,event);">
+													<span id="srsheader_Label6" name="Label6">Classes</span>
+												</div>				
+												<div id="optionClassesMenu" class="stylemenuSubmenu" style="width: 200px; display: none;" onmouseout="OutsideMenu('optionClasses',event);">
+													<ul class="listmenu">
+														<li><a href="http://management.digipen.edu/srs-app/students/ClassTimeTables.aspx">Course Timetables</a></li>
+														<li><a href="http://management.digipen.edu/srs-app/students/ClassRegistrationHeader.aspx">Online Registration Form</a></li>
+														<li><a href="http://management.digipen.edu/srs-app/students/ClassRegistrationCourseAddDropHeader.aspx">Online Add/Drop Form</a></li>
+														<li><a href="http://management.digipen.edu/srs-app/students/ClassInbox.aspx">Class Inboxes</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<div id="optionRequests" class="menuOptionInActiveSTD" onmouseover="InsideMenu(this.id);" onmouseout="OutsideMenu(this.id,event);">
+													<span id="srsheader_Label8" name="Label6">Online Requests</span>
+												</div>				
+												<div id="optionRequestsMenu" class="stylemenuSubmenu" style="width: 220px; display: none;" onmouseout="OutsideMenu('optionRequests',event);">
+													<ul class="listmenu">
+														<li><a href="http://management.digipen.edu/srs-app/students/CreditsEvaluationFormHeader.aspx">Credits Evaluation Form</a></li>
+														
+														<li><a href="http://management.digipen.edu/srs-app/students/GraduationRequestHeader.aspx">Graduation Application</a></li>
+														<li><a href="http://management.digipen.edu/srs-app/students/CancelGraduationRequest.aspx">Cancel Graduation Application</a></li>
+														
+														<li><a href="http://management.digipen.edu/srs-app/students/StudentFerpaBlockHeader.aspx">FERPA Directory Block</a></li>
+														
+														<li><a href="http://management.digipen.edu/srs-app/students/ChangeMajorRequestHeader.aspx">Change Major Application</a></li>
+														<li><a href="http://management.digipen.edu/srs-app/students/ChangeMajorApplicationCancel.aspx">Cancel Change Major Application</a></li>
+														<li><a href="http://management.digipen.edu/srs-app/students/ChangeMajorApplicationTrack.aspx">Track Change Major Application</a></li>
+														
+														<li><a href="http://management.digipen.edu/srs-app/students/ChangeAdvisor.aspx">Change Advisor</a></li>
+														
+														<li><a href="http://management.digipen.edu/srs-app/students/EnrollmentVerificationHead.aspx">Enrollment Verification</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<div id="optionServices" class="menuOptionInActiveSTD" onmouseover="InsideMenu(this.id);" onmouseout="OutsideMenu(this.id,event);">
+													<span id="srsheader_Label4" name="Label4">Services</span>
+												</div>				
+												<div id="optionServicesMenu" class="stylemenuSubmenu" style="width:200px;display:none;" onmouseout="OutsideMenu('optionServices',event);">
+													<ul class="listmenu">
+														<li><a href="http://management.digipen.edu/srs-app/students/ServicesParkingHeader.aspx">Parking Application</a></li>
+														<li><a href="http://management.digipen.edu/srs-app/students/ServicesParkingUpdate.aspx">Update Parking Application</a></li>
+														<li><a href="http://management.digipen.edu/srs-app/students/CancelParkingRequest.aspx">Cancel Parking Reservation</a></li>
+														<li><a href="http://management.digipen.edu/srs-app/students/ServicesMealPlanHeader.aspx">Meal Plan Application</a></li>
+														<li><a href="http://management.digipen.edu/srs-app/students/CancelMealPlanRequest.aspx">Cancel Meal Plan</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<div id="optionDownload" class="menuOptionInActiveSTD" onmouseover="InsideMenu(this.id);" onmouseout="OutsideMenu(this.id,event);">
+													<span id="srsheader_Label9" name="Label6">Downloadable Forms</span>
+												</div>				
+												<div id="optionDownloadMenu" class="stylemenuSubmenu" style="width: 270px; display: none;" onmouseout="OutsideMenu('optionDownload',event);">
+													<ul class="listmenu">
+														<li><a href="javascript:OpenLink('https://www.digipen.edu/fileadmin/website_data/student-affairs/forms/Registrar/Registration_Override.pdf')">Registration Override Form</a></li>														
+														<li><a href="javascript:OpenLink('https://www.digipen.edu/fileadmin/website_data/forms/Transcript_request_form.pdf')">Official Transcript Request</a></li>
+														<li><a href="javascript:OpenLink('https://www.digipen.edu/fileadmin/website_data/financial_aid/Student_consent_for_release_of_records.pdf')">Student Consent for Release of Records</a></li>														
+														<li><a href="javascript:OpenLink('http://www.digipen.edu')">DigiPen Website</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<div id="optionBB" class="menuOptionInActiveSTD" onmouseover="InsideMenu(this.id);" onmouseout="OutsideMenu(this.id,event);">
+													<span id="srsheader_Label7" name="Label7">Resources</span>
+												</div>				
+												<div id="optionBBMenu" class="stylemenuSubmenu" style="width:150px;display:none;" onmouseout="OutsideMenu('optionBB',event);">
+													<ul class="listmenu">
+														<li><a href="http://management.digipen.edu/srs-app/students/bulletinBoards.aspx">Bulletin Board</a></li>
+														<li><a href="http://management.digipen.edu/srs-app/students/EmailDirectory.aspx">E-Mail Directory</a></li>
+													</ul>
+												</div>
+											</td>
+										</tr>
+									</tbody></table>
+								</td>
+								<td align="right">
+									<a id="srsheader_lnkLogout" class="styleLogout" href="https://management.digipen.edu/srs-app/students/Logout.aspx">Logout</a>
+								</td>
+							</tr>
+						</tbody></table>
+					</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<table style="border-bottom:2px solid #656565;" cellpadding="3" cellspacing="0" border="0" width="100%">
+				<tbody><tr valign="top">
+					<td valign="middle" width="205px">
+						<img id="srsheader_dplogo2" src="MyGrades.aspx_files/dplogo_new.gif" style="border-style:None;height:54px;width:205px;border-width:0px;">
+					</td>
+					<td align="center">
+						<table cellpadding="0" cellspacing="0" align="center" border="0">
+							<tbody><tr>
+								<td align="center" nowrap="nowrap">
+									<span id="srsheader_Label1" class="srsTitle" style="color:#003366;">Student Records System</span>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" bgcolor="#003366" nowrap="nowrap">
+									<span id="srsheader_Label2" class="srsDatabase" style="color:Gainsboro;">Students Database</span>
+								</td>
+							</tr>
+						</tbody></table>
+					</td>
+					<td nowrap="nowrap" valign="middle" width="50px">
+						<table cellpadding="0" cellspacing="0" border="0">
+							<tbody><tr>
+								<td>
+									<table cellpadding="2" cellspacing="0" bgcolor="#003366" border="0">
+										<tbody><tr>
+											<td>
+												<table bgcolor="#efefee" border="0">
+													<tbody><tr valign="top">
+														<td bgcolor="#003366" nowrap="nowrap"><span id="srsheader_userid" class="bsmalltahoma" style="color:White;">60001111</span></td>
+													</tr>
+													<tr valign="top">
+														<td nowrap="nowrap"><span id="srsheader_ipaddr" class="nsmalltahoma" style="color:Gray;">71.197.217.13</span></td>
+													</tr>
+													<tr valign="top">
+														<td nowrap="nowrap"><span id="srsheader_datetime" class="nsmalltahoma" style="color:Gray;">Thursday, August 02, 2012&nbsp;10:07:16 PM</span></td>
+													</tr>
+												</tbody></table>
+											</td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+						</tbody></table>
+					</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+	<tr>
+	    <td valign="top">
+	        <div id="srsheader_titleDiv" style="display:block;">
+                <table class="pageTitleSTD" border="0">
+                    <tbody><tr>
+                        <td nowrap="nowrap">
+                            <span id="srsheader_Span1" style="color:white">Unofficial Grades Report</span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </td>
+		<td class="unreadcell" align="right" width="89%">
+			
+		</td>
+	</tr>
+</tbody></table>
+
+    <form name="MyGrades" method="post" action="MyGrades.aspx" id="MyGrades">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5NDM5MzU2NTYPFgIeAmlkKClZU3lzdGVtLkludDY0LCBtc2NvcmxpYiwgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkINjAwMDExMTEWBAIDD2QWCgIHDw8WAh4ISW1hZ2VVcmwFHi9zcnMtYXBwL2ltYWdlcy9kcGxvZ29fbmV3LmdpZmRkAgoPDxYCHgRUZXh0BQg2MDAwMTExMWRkAgsPDxYCHwIFDTcxLjE5Ny4yMTcuMTNkZAIMDw8WAh8CBSpUaHVyc2RheSwgQXVndXN0IDAyLCAyMDEyJm5ic3A7MTA6MDc6MTYgUE1kZAIODw8WAh4HVmlzaWJsZWhkZAIFD2QWAgIDDw8WAh8DZ2QWAgIBD2QWLgIDDw8WAh8CBRJTYW50b3NoIFNoZWRiYWxrYXJkZAIHDw8WAh8DZ2RkAg0PDxYCHwIFQE1TIENTOiBNYXN0ZXIgb2YgU2NpZW5jZSBpbiBDb21wdXRlciBTY2llbmNlIC0gRnVsbC1UaW1lIFByb2dyYW1kZAIRDw8WAh8CBQkyMDExLTIwMTJkZAIVDw8WAh8CBQxNYXRyaWN1bGF0ZWRkZAIZDw8WAh8CBQIxOGRkAh0PDxYCHwIFAjE4ZGQCIQ8PFgIfAgUFNzIuMzBkZAIlDw8WAh8CBQQzLjAxZGQCKQ8PFgIfAgUCMTVkZAItDw8WAh8CBQE2ZGQCMQ8PFgIfAgUBMGRkAjUPDxYCHwIFAjIxZGQCOQ8PFgIfAgUCMTVkZAI9Dw8WAh8CBQhHcmFkdWF0ZWRkAkEPDxYCHwIFBjQ4LjY1JWRkAkUPDxYCHwIFBjQ4LjY1JWRkAkkPDxYCHwIFBjQwLjU0JWRkAk0PDxYCHwIFBzExNi42NyVkZAJPD2QWAmYPZBYCZg9kFgRmD2QWAmYPZBYCAgEPZBYCZg9kFgJmDzwrAAsAZAIBD2QWAmYPZBYCAgEPZBYCZg9kFgJmDzwrAAsAZAJVD2QWAmYPZBYCZg9kFgJmD2QWAmYPZBYCZg9kFgJmD2QWAmYPPCsACwEBFCsABWRkZDwrAAQBABYCHwNnPCsABAEAFgIfA2dkAl0PDxYCHwNnZGQCYw8PFgIfA2dkZGRcqhcKUQnNQk0hPtK/0TZQfjdAyQ==" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['MyGrades'];
+if (!theForm) {
+    theForm = document.MyGrades;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKg5v2+DALj2P3HAwKl4L2wA0ORwZqPEcP24EYnZyCnqDvtkI+G" type="hidden">
+</div>
+        <table cellpadding="0" cellspacing="0" align="center" border="0">
+			<tbody><tr>
+				<td align="center">
+					
+				</td>
+			</tr>
+			<tr>
+				<td align="center">					
+					<div id="main">
+	
+					    <table align="center" border="0">
+					        <tbody><tr valign="top">
+								<td align="center">
+									<div id="gradesmPanel">
+		
+										<table cellpadding="0" cellspacing="0" border="0">
+										    <tbody><tr>
+										        <td></td>
+										        <td align="right">
+										            <span id="Label4" class="nsmalltahoma"><sub>(*) not counted in GPA</sub></span>
+										        </td>
+										    </tr>
+											<tr valign="top">
+										        <td style="background-color:#efefee; border:solid 1 #aaad9c">
+										            <table cellpadding="0" cellspacing="3" border="0">
+										                <tbody><tr>
+										                    <td colspan="2">
+										                        <span id="Identity" class="bLargeVerdana">Santosh Shedbalkar</span>
+										                        
+										                        <a id="PreMasterRec" class="slinksilver" href="javascript:__doPostBack('PreMasterRec','')"><br>Show Pre-Master Record</a>
+										                        
+										                    </td>
+										                </tr>
+										                <tr><td>&nbsp;</td></tr>
+										                <tr valign="top">
+										                    <td>
+										                        <span id="Label5" class="n9Verdana">Program: </span>
+										                    </td>
+										                    <td>
+										                        <span id="Program" class="n9Verdana" style="display:inline-block;width:200px;width:200px">MS CS: Master of Science in Computer Science - Full-Time Program</span>
+										                    </td>
+										                </tr>
+										                <tr valign="top">
+										                    <td>
+										                        <span id="Label6" class="n9Verdana">Cohort: </span>
+										                    </td>
+										                    <td>
+										                        <span id="Cohort" class="n9Verdana">2011-2012</span>
+										                    </td>
+										                </tr>
+										                <tr valign="top">
+										                    <td>
+										                        <span id="Label7" class="n9Verdana">Status: </span>
+										                    </td>
+										                    <td>
+										                        <span id="Status" class="n9Verdana">Matriculated</span>
+										                    </td>
+										                </tr>
+										                <tr height="10px"><td></td></tr>
+										                <tr>
+										                    <td colspan="2">
+										                        <table cellpadding="0" cellspacing="3" border="0">
+										                            <tbody><tr valign="top">
+										                                <td>
+										                                    <span id="Label9" class="n9Verdana">Total Credits Attempted: </span>
+										                                </td>
+										                                <td align="right">
+										                                    <span id="Attempted" class="n9Verdana">18</span>
+										                                </td>
+										                            </tr>
+										                            <tr valign="top">
+										                                <td nowrap="nowrap">
+										                                    <span id="Label10" class="n9Verdana">Total Credits Fully Attempted: </span>
+										                                </td>
+										                                <td align="right">
+										                                    <span id="FullyAttempted" class="n9Verdana">18</span>
+										                                </td>
+										                            </tr>
+										                            <tr valign="top">
+										                                <td>
+										                                    <span id="Label11" class="n9Verdana">Total Grade Points: </span>
+										                                </td>
+										                                <td align="right">
+										                                    <span id="GP" class="n9Verdana">72.30</span>
+										                                </td>
+										                            </tr>
+										                            <tr valign="top">
+										                                <td>
+										                                    <span id="Label12" class="b9Verdana">Cumulative GPA: </span>
+										                                </td>
+										                                <td align="right">
+										                                    <span id="GPA" class="b9Verdana">3.01</span>
+										                                </td>
+										                            </tr>
+										                            <tr height="10px"><td></td></tr>
+										                            <tr valign="top">
+										                                <td>
+										                                    <span id="Label13" class="n9Verdana">Total Credits Earned: </span>
+										                                </td>
+										                                <td align="right">
+										                                    <span id="EarnedDP" class="n9Verdana">15</span>
+										                                </td>
+										                            </tr>
+										                            <tr valign="top">
+										                                <td>
+										                                    <span id="Label1" class="n9Verdana">Total Transferred: </span>
+										                                </td>
+										                                <td align="right">
+										                                    <span id="Transferred" class="n9Verdana">6</span>
+										                                </td>
+										                            </tr>
+										                            <tr valign="top">
+										                                <td>
+										                                    <span id="Label15" class="n9Verdana">Total Waived: </span>
+										                                </td>
+										                                <td align="right">
+										                                    <span id="Waived" class="n9Verdana">0</span>
+										                                </td>
+										                            </tr>
+										                            <tr valign="top">
+										                                <td>
+										                                    <span id="Label17" class="n9Verdana">Credits To Date: </span>
+										                                </td>
+										                                <td align="right">
+										                                    <span id="CreditsToDate" class="n9Verdana">21</span>
+										                                </td>
+										                            </tr>
+										                            <tr valign="top">
+										                                <td>
+										                                    <span id="Label18" class="b9Verdana">Credits To Date (Program-Related): </span>
+										                                </td>
+										                                <td align="right">
+										                                    <span id="CTD_Prog" class="b9Verdana">15</span>
+										                                </td>
+										                            </tr>
+										                            <tr valign="top">
+										                                <td>
+										                                    <span id="Label19" class="n9Verdana">Standing: </span>
+										                                </td>
+										                                <td align="right">
+										                                    <span id="Standing" class="n9Verdana">Graduate</span>
+										                                </td>
+										                            </tr>
+										                            <tr height="10px"><td></td></tr>
+										                            <tr valign="top">
+										                                <td>
+										                                    <span id="Label3" class="n9Verdana">Program Attempted: </span>
+										                                </td>
+										                                <td align="right">
+										                                    <span id="ProgressAttempted" class="n9Verdana">48.65%</span>
+										                                </td>
+										                            </tr>
+										                            <tr valign="top">
+										                                <td>
+										                                    <span id="Label2" class="n9Verdana">Program Fully Attempted: </span>
+										                                </td>
+										                                <td align="right">
+										                                    <span id="ProgressAttemptedFully" class="n9Verdana">48.65%</span>
+										                                </td>
+										                            </tr>
+										                            <tr valign="top">
+										                                <td>
+										                                    <span id="Label20" class="n9Verdana">Program Completed: </span>
+										                                </td>
+										                                <td align="right">
+										                                    <span id="Progress" class="n9Verdana">40.54%</span>
+										                                </td>
+										                            </tr>
+										                            <tr valign="top">
+										                                <td>
+										                                    <span id="Label21" class="n9Verdana">SAP: </span>
+										                                </td>
+										                                <td align="right">
+										                                    <span id="SAP" class="n9Verdana">116.67%</span>
+										                                </td>
+										                            </tr>
+										                        </tbody></table>
+										                    </td>
+										                </tr>
+										            </tbody></table>
+										        </td>
+												<td style="border:1px solid #aaad9c;">
+													<table cellpadding="0" cellspacing="0" border="0">
+														<tbody><tr>
+															<td>							
+																<table bgcolor="gainsboro">
+																	<tbody><tr>
+																		<td>
+																			<div id="gradesMainPanel">
+			<table style="border-width:1px;border-style:solid;width:100%;" cellpadding="6" border="0">
+				<tbody><tr>
+					<td valign="top"><table style="border-style:None;width:100%;" cellpadding="4" border="0">
+						<tbody><tr>
+							<td colspan="2" style="white-space:nowrap;"><a style="" id="sem11sem" class="slinksilver" onclick="javascript:window.open('http://management.digipen.edu/srs-app/students/MyGradesList.aspx?sem=1,2011-2012&amp;camp=REDMOND&amp;premaster=False&amp;studid=60001111','_blank','status=no,fullscreen=no,menubar=no,scrollbars=yes,resizable=yes,width=800,height=400','true');return false;" onmouseover="javascript:this.style.cursor = 'hand';"><u>SPRING SEMESTER 2012</u></a></td>
+						</tr><tr>
+							<td colspan="2" style="white-space:nowrap;"><table id="sem11" style="background-color:White;border-color:Gainsboro;width:100%;border-collapse:collapse;" cellpadding="6" cellspacing="0" border="0">
+								<tbody><tr class="nsmallarial">
+									<td>CS 541</td><td>Advanced Computer Graphics</td><td align="right">3</td><td>A</td><td align="right">4.00</td>
+								</tr><tr class="nsmallarial">
+									<td>GAM 541</td><td>Master's Game Project </td><td align="right">3</td><td>A-</td><td align="right">3.70</td>
+								</tr><tr class="nsmallarial">
+									<td>MAT 557</td><td>Numerical Analysis</td><td align="right">3</td><td>A</td><td align="right">4.00</td>
+								</tr><tr class="bsmallarial" style="color:Black;" align="right">
+									<td>&nbsp;</td><td>&nbsp;</td><td>9</td><td>&nbsp;</td><td>&nbsp;</td>
+								</tr>
+							</tbody></table></td>
+						</tr><tr>
+							<td align="left"><table style="border-collapse:collapse;" cellpadding="0" cellspacing="0" border="0">
+								<tbody><tr>
+									<td style="white-space:nowrap;" align="right"><span id="sem11credAtt" class="nsmalltahoma">Credits Attempted:&nbsp;&nbsp;&nbsp;</span></td><td style="white-space:nowrap;" align="right"><span id="sem11credAttn" class="nsmalltahoma">9.00</span></td>
+								</tr><tr>
+									<td style="white-space:nowrap;" align="right"><span id="sem11credFAtt" class="nsmalltahoma">Credits Fully Attempted:&nbsp;&nbsp;&nbsp;</span></td><td style="white-space:nowrap;" align="right"><span id="sem11credFAttn" class="nsmalltahoma">9.00</span></td>
+								</tr><tr>
+									<td style="white-space:nowrap;" align="right"><span id="sem11credEar" class="nsmalltahoma">Credits Earned:&nbsp;&nbsp;&nbsp;</span></td><td style="white-space:nowrap;" align="right"><span id="sem11credearn" class="nsmalltahoma">9.00</span></td>
+								</tr><tr>
+									<td style="white-space:nowrap;" align="right"><span id="sem11sap" class="nsmalltahoma">SAP:&nbsp;&nbsp;&nbsp;</span></td><td style="white-space:nowrap;" align="right"><span id="sem11sapn" class="nsmalltahoma">100.00</span></td>
+								</tr>
+							</tbody></table></td><td align="right"><table style="border-collapse:collapse;" cellpadding="0" cellspacing="0" border="0">
+								<tbody><tr>
+									<td style="white-space:nowrap;" align="right"><span id="sem11gradep" class="nsmalltahoma">Grade Points:&nbsp;&nbsp;&nbsp;</span></td><td style="white-space:nowrap;" align="right"><span id="sem11gradepn" class="nsmalltahoma">35.10</span></td>
+								</tr><tr>
+									<td style="white-space:nowrap;" align="right"><span id="sem11gpa" class="nsmalltahoma">GPA:&nbsp;&nbsp;&nbsp;</span></td><td style="white-space:nowrap;" align="right"><span id="sem11gpan" class="nsmalltahoma">3.90</span></td>
+								</tr><tr>
+									<td style="white-space:nowrap;" align="right"><span id="sem11cumgpa" class="nsmalltahoma">Cumulative GPA:&nbsp;&nbsp;&nbsp;</span></td><td style="white-space:nowrap;" align="right"><span id="sem11cumgpan" class="nsmalltahoma">3.88</span></td>
+								</tr><tr>
+									<td style="white-space:nowrap;" align="right"><span id="sem11cumsap" class="nsmalltahoma">Overall SAP:&nbsp;&nbsp;&nbsp;</span></td><td style="white-space:nowrap;" align="right"><span id="sem11cumsapn" class="nsmalltahoma">166.67</span></td>
+								</tr>
+							</tbody></table></td>
+						</tr>
+					</tbody></table></td><td valign="top"><table style="border-style:None;width:100%;" cellpadding="4" border="0">
+						<tbody><tr>
+							<td colspan="2" style="white-space:nowrap;"><a style="" id="sem12sem" class="slinksilver" onclick="javascript:window.open('http://management.digipen.edu/srs-app/students/MyGradesList.aspx?sem=2,2011-2012&amp;camp=REDMOND&amp;premaster=False&amp;studid=60001111','_blank','status=no,fullscreen=no,menubar=no,scrollbars=yes,resizable=yes,width=800,height=400','true');return false;" onmouseover="javascript:this.style.cursor = 'hand';"><u>SUMMER SEMESTER 2012</u></a></td>
+						</tr><tr>
+							<td colspan="2" style="white-space:nowrap;"><table id="sem12" style="background-color:White;border-color:Gainsboro;width:100%;border-collapse:collapse;" cellpadding="6" cellspacing="0" border="0">
+								<tbody><tr class="nsmallarial">
+									<td>CS 260</td><td>Computer Networks I, Interprocess Communication</td><td align="right">3</td><td>C-</td><td align="right">1.70</td>
+								</tr><tr class="nsmallarial">
+									<td>CS 530</td><td>Advanced Game Engine Design</td><td align="right">3</td><td>B</td><td align="right">3.00</td>
+								</tr><tr class="nsmallarial">
+									<td>CS 580</td><td>Artificial Intelligence in Games</td><td align="right">3</td><td>F</td><td align="right">0.00</td>
+								</tr><tr class="bsmallarial" style="color:Black;" align="right">
+									<td>&nbsp;</td><td>&nbsp;</td><td>9</td><td>&nbsp;</td><td>&nbsp;</td>
+								</tr>
+							</tbody></table></td>
+						</tr><tr>
+							<td align="left"><table style="border-collapse:collapse;" cellpadding="0" cellspacing="0" border="0">
+								<tbody><tr>
+									<td style="white-space:nowrap;" align="right"><span id="sem12credAtt" class="nsmalltahoma">Credits Attempted:&nbsp;&nbsp;&nbsp;</span></td><td style="white-space:nowrap;" align="right"><span id="sem12credAttn" class="nsmalltahoma">9.00</span></td>
+								</tr><tr>
+									<td style="white-space:nowrap;" align="right"><span id="sem12credFAtt" class="nsmalltahoma">Credits Fully Attempted:&nbsp;&nbsp;&nbsp;</span></td><td style="white-space:nowrap;" align="right"><span id="sem12credFAttn" class="nsmalltahoma">9.00</span></td>
+								</tr><tr>
+									<td style="white-space:nowrap;" align="right"><span id="sem12credEar" class="nsmalltahoma">Credits Earned:&nbsp;&nbsp;&nbsp;</span></td><td style="white-space:nowrap;" align="right"><span id="sem12credearn" class="nsmalltahoma">6.00</span></td>
+								</tr><tr>
+									<td style="white-space:nowrap;" align="right"><span id="sem12sap" class="nsmalltahoma" style="color:Red;">SAP:&nbsp;&nbsp;&nbsp;</span></td><td style="white-space:nowrap;" align="right"><span id="sem12sapn" class="nsmalltahoma" style="color:Red;">66.67</span></td>
+								</tr>
+							</tbody></table></td><td align="right"><table style="border-collapse:collapse;" cellpadding="0" cellspacing="0" border="0">
+								<tbody><tr>
+									<td style="white-space:nowrap;" align="right"><span id="sem12gradep" class="nsmalltahoma">Grade Points:&nbsp;&nbsp;&nbsp;</span></td><td style="white-space:nowrap;" align="right"><span id="sem12gradepn" class="nsmalltahoma">14.10</span></td>
+								</tr><tr>
+									<td style="white-space:nowrap;" align="right"><span id="sem12gpa" class="nsmalltahoma">GPA:&nbsp;&nbsp;&nbsp;</span></td><td style="white-space:nowrap;" align="right"><span id="sem12gpan" class="nsmalltahoma">1.57</span></td>
+								</tr><tr>
+									<td style="white-space:nowrap;" align="right"><span id="sem12cumgpa" class="nsmalltahoma">Cumulative GPA:&nbsp;&nbsp;&nbsp;</span></td><td style="white-space:nowrap;" align="right"><span id="sem12cumgpan" class="nsmalltahoma">3.01</span></td>
+								</tr><tr>
+									<td style="white-space:nowrap;" align="right"><span id="sem12cumsap" class="nsmalltahoma">Overall SAP:&nbsp;&nbsp;&nbsp;</span></td><td style="white-space:nowrap;" align="right"><span id="sem12cumsapn" class="nsmalltahoma">116.67</span></td>
+								</tr>
+							</tbody></table></td>
+						</tr>
+					</tbody></table></td>
+				</tr>
+			</tbody></table>
+		</div>
+																		</td>
+																	</tr>
+																	<tr><td align="center"></td></tr>
+																	<tr>
+																		<td>
+																			<table cellpadding="5" align="center" border="0">
+																			<tbody><tr>
+																				<td valign="top">
+																					<span id="Label99" style="font-family:tahoma;font-size:9pt;font-weight:bold;">Summary of articulated credits:</span>
+																					<div id="articulatedPanel">
+			<table style="border-width:1px;border-style:solid;" cellpadding="4" border="0">
+				<tbody><tr>
+					<td valign="top"><table style="border-style:None;width:100%;" cellpadding="2" border="0">
+						<tbody><tr>
+							<td colspan="2" style="white-space:nowrap;"><table id="instartigrid" style="background-color:White;border-color:Gainsboro;width:100%;border-collapse:collapse;" cellpadding="4" cellspacing="0" border="0">
+								<tbody><tr class="nsmallarial">
+									<td style="white-space:nowrap;" valign="top">CS 525</td><td>Object-Oriented Design and Programming</td><td align="right" valign="top">3</td><td valign="top">A</td><td align="right" valign="top">4.00</td>
+								</tr><tr class="nsmallarial">
+									<td style="white-space:nowrap;" valign="top">CS 529</td><td>Fundamentals of Game Development</td><td align="right" valign="top">3</td><td valign="top">A-</td><td align="right" valign="top">3.70</td>
+								</tr><tr class="bsmallarial">
+									<td>&nbsp;</td><td>&nbsp;</td><td>6</td><td>&nbsp;</td><td>&nbsp;</td>
+								</tr>
+							</tbody></table></td>
+						</tr>
+					</tbody></table></td>
+				</tr><tr>
+					<td align="right"><table border="0">
+						<tbody><tr>
+							<td align="right"><span id="art_gpa" class="nsmalltahoma">GPA&nbsp;&nbsp;</span></td><td align="right"><span id="art_v_gpa" class="nsmalltahoma">3.85</span></td>
+						</tr>
+					</tbody></table></td>
+				</tr>
+			</tbody></table>
+		</div>
+																					
+																				</td>	
+																				<td valign="top">
+																					<span id="Label50" style="font-family:tahoma;font-size:9pt;font-weight:bold;">Summary of transferred credits:</span>
+																					<div id="transferPanel">
+
+		</div>
+																					<span id="notransfer" style="font-family:tahoma;font-size:9pt;">None</span>
+																				</td>
+																															
+																				<td valign="top">
+																					<span id="Label54" style="font-family:tahoma;font-size:9pt;font-weight:bold;">Summary of waived credits:</span>
+																					<div id="WaiverPanel">
+
+		</div>
+																					<span id="nowaiver" style="font-family:tahoma;font-size:9pt;">None</span>
+																				</td>
+																			</tr>
+																			</tbody></table>											
+																		</td>
+																	</tr>
+																</tbody></table>
+															</td>
+														</tr>
+													</tbody></table>
+												</td>
+											</tr> 
+										    <tr>
+										        <td></td>
+										        <td align="right">
+										            <span id="Label22" class="nsmalltahoma"><sup>(*) not counted in GPA</sup></span>
+										        </td>
+										    </tr>
+										</tbody></table>			
+									
+	</div>												
+								</td>
+							</tr>
+							<tr>
+								<td align="center">
+									<input name="Cancel1" value="&lt;&lt; Back" id="Cancel1" class="nsmallarial" style="width:65px;" type="submit">	
+								</td>
+							</tr>
+						</tbody></table>
+					
+</div>							
+				</td>
+			</tr>
+		</tbody></table>
+    </form>
+
+
+</body></html>

@@ -1,0 +1,87 @@
+grading 525 B santosh.s
+== SUBMISSION =============================
+10 
+== COMPILE ================================
+"make gcc_c &> out.make.gcc_c.txt"	gcc_c OK.	8/8
+"make gcc_cpp &> out.make.gcc_cpp.txt"	gcc_cpp warnings - 0, errors   - 4, see out.make.gcc_cpp.txt.	0/0
+"make gcc_c_cpp &> out.make.gcc_c_cpp.txt"	gcc_c_cpp OK.	0/0
+"make msc_c &> out.make.msc_c.txt"	msc_c warnings - 4, errors   - 0, see out.make.msc_c.txt.	0/0
+"make msc_cpp &> out.make.msc_cpp.txt"	msc_cpp warnings - 0, errors   - 4, see out.make.msc_cpp.txt.	0/8
+"make msc_c_cpp &> out.make.msc_c_cpp.txt"	msc_c_cpp warnings - 4, errors   - 0, see out.make.msc_c_cpp.txt.	0/0
+"make bcc_c &> out.make.bcc_c.txt"	bcc_c warnings - 6, errors   - 0, see out.make.bcc_c.txt.	0/0
+"make bcc_cpp &> out.make.bcc_cpp.txt"	bcc_cpp warnings - 6, errors   - 0, see out.make.bcc_cpp.txt.	0/0
+"make bcc_c_cpp &> out.make.bcc_c_cpp.txt"	bcc_c_cpp warnings - 6, errors   - 0, see out.make.bcc_c_cpp.txt.	4/8
+"make bcc_cg &> out.make.bcc_cg.txt"	bcc_cg warnings - 6, errors   - 0, see out.make.bcc_cg.txt.	0/0
+== RUNTIME ================================
+test 0 (using gcc0.exe): ./gcc0.exe  -s 100 -o 0_ -i 120  >/dev/null
+number of chunks 2 (correct 2), total size of chunks 120 (correct 120)
+chunks look OK
+OK  (3/3 points)
+test 1 (using gcc0.exe): ./gcc0.exe  -s 100 -o 1_ -i 200  >/dev/null
+number of chunks 2 (correct 2), total size of chunks 200 (correct 200)
+chunks look OK
+OK  (3/3 points)
+test 2 (using msc0.exe): ./msc0.exe  -s 300 -o 2_ -i 200  >/dev/null
+number of chunks 1 (correct 1), total size of chunks 200 (correct 200)
+chunks look OK
+OK  (3/3 points)
+test 3 (using msc0.exe): ./msc0.exe  -s 10000 -o 3_ -i 20000  >/dev/null
+number of chunks 2 (correct 2), total size of chunks 20000 (correct 20000)
+chunks look OK
+OK  (3/3 points)
+test 4 (using msc0.exe): ./msc0.exe  -s 10000 -o 4_ -i 21000  >/dev/null
+number of chunks 3 (correct 3), total size of chunks 21000 (correct 21000)
+chunks look OK
+OK  (3/3 points)
+test 5 (using gcc0.exe): ./gcc0.exe  -s 5000 -o 5_ -i joiner  >/dev/null
+number of chunks 3 (correct 3), total size of chunks 12431 (correct 12431)
+chunks look OK
+OK  (3/3 points)
+test 6 (using msc0.exe): ./msc0.exe   -j -o 6_joined_student -i 6_0001 6_0002  >/dev/null
+joining 6_0001 6_0002 into 6_joined_student should be the same as "200"
+number of different lines is 0
+OK  (3/3 points)
+test 7 (using msc0.exe): ./msc0.exe   -j -o 7_joined_student -i 7_0001 7_0002 7_0003 7_0004  >/dev/null
+joining 7_0001 7_0002 7_0003 7_0004 into 7_joined_student should be the same as "120"
+number of different lines is 0
+OK  (3/3 points)
+test 8 (using msc0.exe): ./msc0.exe   -j -o 8_joined_student -i 8_000*  >/dev/null
+joining 8_000* into 8_joined_student should be the same as "21000"
+number of different lines is 0
+OK  (3/3 points)
+test 9 (using gcc0.exe): ./gcc0.exe   -j -o 9_joined_student -i 9_0*  >/dev/null
+joining 9_0* into 9_joined_student should be the same as "200"
+number of different lines is 0
+OK  (3/3 points)
+test 105 (using bcc_cg.exe): ./bcc_cg.exe  -s 5000 -o 5_ -i joiner  >/dev/null
+number of chunks 3 (correct 3), total size of chunks 12431 (correct 12431)
+chunks look OK
+bcc_cg.cgl wasn't found
+OK  (10/10 points)
+test 106 (using bcc_cg.exe): ./bcc_cg.exe   -j -o 6_joined_student -i 6_0001 6_0002  >/dev/null
+joining 6_0001 6_0002 into 6_joined_student should be the same as "200"
+number of different lines is 0
+bcc_cg.cgl wasn't found
+OK  (6/6 points)
+test 107 (using bcc_cg.exe): ./bcc_cg.exe   -j -o 7_joined_student -i 7_0001 7_0002 7_0003 7_0004  >/dev/null
+joining 7_0001 7_0002 7_0003 7_0004 into 7_joined_student should be the same as "120"
+number of different lines is 0
+bcc_cg.cgl wasn't found
+OK  (15/15 points)
+
+===========================================
+GRADE before code quality check +[0..5] is 83
+===========================================
+Grading script usage "/home/dvolper/bin2/grading.1.pl 525 B santosh.s".
+your code (splitter.h splitter.c r.txt) should be in B/santosh.s/ relative to
+(Makefile driver.c driver.cpp bcc_cg.cgi 120 200 20000 21000 joiner 6_0001 6_0002 7_0001 7_0002 7_0003 7_0004 8_0001 8_0002 8_0003 8_0004 8_0005 9_0001 9_0002 9_0003 9_0004 9_0005 9_0006 9_0007 9_0008 9_0009 9_0010 9_0011 9_0012 9_0013 9_0014 9_0015 9_0016 9_0017 9_0018 9_0019 9_0020 9_0021 9_0022 9_0023 9_0024 9_0025 9_0026 9_0027 9_0028 9_0029 9_0030 9_0031 9_0032 9_0033 9_0034 9_0035 9_0036 9_0037 9_0038 9_0039 9_0040 9_0041 9_0042 9_0043 9_0044 9_0045 9_0046 9_0047 9_0048 9_0049 9_0050 9_0051 9_0052 9_0053 9_0054 9_0055 9_0056 9_0057 9_0058 9_0059 9_0060 9_0061 9_0062 9_0063 9_0064 9_0065 9_0066 9_0067 9_0068 9_0069 9_0070 9_0071 9_0072 9_0073 9_0074 9_0075 9_0076 9_0077 9_0078 9_0079 9_0080 9_0081 9_0082 9_0083 9_0084 9_0085 9_0086 9_0087 9_0088 9_0089 9_0090 9_0091 9_0092 9_0093 9_0094 9_0095 9_0096 9_0097 9_0098 9_0099 9_0100).
+NOTES:
+leak tests:105: this is a test of normal splitter operation - all files exist
+     just checking you close/free all the stuff you've allocted
+106: an attempt to open a non-existing file in joiner,
+     possible failure previosuly opened files and allocated memory 
+     is not closed/freed when exitig in the "middle"
+107: an attempt to allocate about 4Gb buffer -- 
+     if you failed this test, then you are trying to allocate a
+     buffer of size 4000000000 - while it should have been 
+     a min(4000000000,4096)

@@ -1,0 +1,6 @@
+echo Compile all with C++
+Compile all with C++
+g++ -c splitter.c -Wall -Wextra -ansi -pedantic
+splitter.c: In function 'int JoinFiles(char**, char*)':
+splitter.c:153: error: invalid conversion from 'const char*' to 'char*'
+make: *** [gcc_cpp] Error 1

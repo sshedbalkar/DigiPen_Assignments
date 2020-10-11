@@ -1,0 +1,806 @@
+body
+{
+}
+.dplnk 
+{
+	font-family:Verdana,Arial,Tahoma,Sans-Serif;
+	font-size:8pt;
+	font-weight:normal;
+}
+.dplnk a
+{
+	text-decoration:none;
+	color:white;
+}
+.dplnk a:hover
+{
+	color:#acacac;
+}
+
+.dpBlacklnk 
+{
+	font-family:Arial,Verdana,Tahoma,Sans-Serif;
+	font-size:8pt;
+	font-weight:normal;
+}
+.dpBlacklnk td a
+{
+	font-family:Verdana,Arial,Tahoma,Sans-Serif;
+	text-decoration:none;
+	color:Black;
+}
+.dpBlacklnk td a:link
+{
+	color:Black;
+}
+.dpBlacklnk td a:hover
+{
+	color:#de5b5d;
+}
+
+
+.dpBlacklnk2 
+{
+	font-family:Tahoma,Verdana,Sans-Serif;
+	font-size:9pt;
+	font-weight:normal;
+}
+.dpBlacklnk2 a
+{
+	font-weight:bold;
+	text-decoration:none;
+	color:#ae1b1d;
+}
+.dpBlacklnk2 a:link
+{
+	font-weight:bold;
+	color:#ae1b1d;
+}
+.dpBlacklnk2 a:hover
+{
+	font-weight:bold;
+	color:#545454;
+	text-decoration:underline;
+}
+
+.mailtolinks
+{
+	padding-top:10px;
+}
+.mailtolinks a
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #A20133;
+	text-decoration: none;
+}
+
+.slink
+{
+	text-decoration:none;
+	font-family:Tahoma;
+	font-size:8pt;
+	color:gray;
+}
+.slink:link
+{
+	text-decoration:none;
+	font-family:Tahoma;
+	font-size:8pt;
+	color:blue;
+}
+.slink:hover
+{
+	text-decoration:none;
+	font-family:Tahoma;
+	font-size:8pt;
+	color:blue;	
+}
+.slink:active
+{
+	text-decoration:none;
+	font-family:Tahoma;
+	font-size:8pt;
+	color:blue;	
+}
+.slink:visited
+{
+	text-decoration:none;
+	font-family:Tahoma;
+	font-size:8pt;
+	color:blue;	
+}
+
+.slinkbold
+{
+	text-decoration:none;
+	font-family:Tahoma;
+	font-size:8pt;
+	color:gray;
+	font-weight:bold;
+}
+.slinkbold:link
+{
+	text-decoration:none;
+	font-family:Tahoma;
+	font-size:8pt;
+	color:blue;
+	font-weight:bold;	
+}
+.slinkbold:hover
+{
+	text-decoration:none;
+	font-family:Tahoma;
+	font-size:8pt;
+	color:blue;
+	font-weight:bold;
+}
+.slinkbold:active
+{
+	text-decoration:none;
+	font-family:Tahoma;
+	font-size:8pt;
+	color:blue;	
+	font-weight:bold;
+}
+.slinkbold:visited
+{
+	text-decoration:none;
+	font-family:Tahoma;
+	font-size:8pt;
+	color:blue;
+	font-weight:bold;
+}
+/***********************/
+.slinkboldunderline
+{
+	text-decoration:underline;
+	font-family:Tahoma;
+	font-size:8pt;
+	color:gray;
+	font-weight:bold;
+}
+.slinkboldunderline:link
+{
+	text-decoration:underline;
+	font-family:Tahoma;
+	font-size:8pt;
+	color:blue;
+	font-weight:bold;	
+}
+.slinkboldunderline:hover
+{
+	text-decoration:underline;
+	font-family:Tahoma;
+	font-size:8pt;
+	color:blue;
+	font-weight:bold;
+}
+.slinkboldunderline:active
+{
+	text-decoration:underline;
+	font-family:Tahoma;
+	font-size:8pt;
+	color:blue;	
+	font-weight:bold;
+}
+.slinkboldunderline:visited
+{
+	text-decoration:underline;
+	font-family:Tahoma;
+	font-size:8pt;
+	color:blue;
+	font-weight:bold;
+}
+.slinkbutton
+{
+	text-decoration:none;
+	font-family:Tahoma;
+	font-size:8pt;
+	color:Black;
+	background-color:#a9a9a9;
+	display:block;
+}
+.label
+{
+	font-family:"tahoma";
+	font-size:11;	
+}
+
+.bsmalltahoma
+{
+	font-family:tahoma;
+	font-size:8pt;
+	font-weight:bold;
+}
+
+.nsmalltahoma
+{
+	font-family:tahoma;
+	font-size:8pt;
+}
+
+.b9tahoma
+{
+	font-family:tahoma;
+	font-size:9pt;
+	font-weight:bold;
+}
+
+.n9tahoma
+{
+	font-family:tahoma;
+	font-size:9pt;
+}
+
+.nmediumtahoma
+{
+	font-family:tahoma;
+	font-size:11pt;
+}
+
+.bmediumtahoma
+{
+	font-family:tahoma;
+	font-size:11pt;
+	font-weight:bold;
+}
+
+.b12tahoma
+{
+	font-family:tahoma;
+	font-size:12pt;
+	font-weight:bold;
+}
+
+.bsmallarial
+{
+	font-family:arial;
+	font-size:8pt;
+	font-weight:bold;
+}
+
+.nsmallarial
+{
+	font-family:arial;
+	font-size:8pt;
+}
+.b9arial
+{
+	font-family:arial;
+	font-size:9pt;
+	font-weight:bold;
+}
+
+.n9arial
+{
+	font-family:arial;
+	font-size:9pt;
+}
+
+.nmediumarial
+{
+	font-family:arial;
+	font-size:11pt;
+}
+
+.bmediumarial
+{
+	font-family:arial;
+	font-size:11pt;
+	font-weight:bold;
+}
+
+.blargetahoma
+{
+	font-family:Tahoma;
+	font-size:14pt;
+	font-weight:bold;
+}
+
+.nlargetahoma
+{
+	font-family:Tahoma;
+	font-size:14pt;
+	font-weight:normal;
+}
+
+.n18tahoma
+{
+	font-family:Tahoma;
+	font-size:18pt;
+}
+
+.blargearial
+{
+	font-family:Arial;
+	font-size:14pt;
+	font-weight:bold;
+}
+
+.nlargearial
+{
+	font-family:Arial;
+	font-size:14pt;
+	font-weight:normal;
+}
+
+.nsmallverdana
+{
+	font-family:Verdana;
+	font-size:7pt;
+	font-weight:normal;
+}
+
+.b20BookAntiqua
+{
+	font-family:Book Antiqua;
+	font-size:20pt;
+	font-weight:bold;
+}
+
+.bsmallverdana
+{
+	font-family:Verdana;
+	font-size:7pt;
+	font-weight:bold;
+}
+
+.n8verdana
+{
+	font-family:Verdana;
+	font-size:8pt;
+	font-weight:normal;
+}
+.b8verdana
+{
+	font-family:Verdana;
+	font-size:8pt;
+	font-weight:bold;
+}
+
+.b9verdana
+{
+	font-family:Verdana;
+	font-size:9pt;
+	font-weight:bold;
+}
+
+.n9verdana
+{
+	font-family:Verdana;
+	font-size:9pt;
+}
+
+.nmediumverdana
+{
+	font-family:Verdana;
+	font-size:11pt;
+	font-weight:normal;
+}
+
+.bmediumverdana
+{
+	font-family:Verdana;
+	font-size:11pt;
+	font-weight:bold;
+}
+
+.nlargeverdana
+{
+	font-family:Verdana;
+	font-size:14pt;
+	font-weight:normal;
+}
+
+.blargeverdana
+{
+	font-family:Verdana;
+	font-size:14pt;
+	font-weight:bold;
+}
+.gridheaderPrint
+{
+	font-family:arial;
+	font-size:7pt;
+	font-weight:bold;	
+}
+.gridItemPrint
+{
+	font-family:tahoma;
+	font-size:7pt;
+	font-weight:normal;
+}
+
+.pageTitleLabel
+{
+	font-family:tahoma;
+	font-size:12pt;
+	font-weight:bold;
+}
+.pageSubTitleLabel
+{
+	font-family:tahoma;
+	font-size:10pt;
+	font-weight:bold;
+}
+.pageButtons
+{
+	font-family:tahoma;
+	font-size:8pt;
+	font-weight:normal;
+	width:65px;
+}
+.pageButtons2
+{
+	height:18px;
+	font-family:Tahoma;
+	font-size:8pt;
+	font-weight:normal;
+	color:#494949;
+	background-color:#a9a9a9;
+	border:1px solid black;
+	width:65px;
+}
+.appEmptySemestersErrorMsg
+{	
+	font-family:tahoma, Verdana, Arial, Sans-Serif;
+	font-size:10pt;
+}
+.appEmptySemestersErrorMsg350
+{	
+	font-family:tahoma, Verdana, Arial, Sans-Serif;
+	font-size:10pt;
+	width:350px;
+}
+
+.appMailingAddressTitleLabel
+{
+	font-family: Arial, Tahoma, Verdana, Sans-Serif;
+	font-size:10pt;	
+	font-style:italic;	
+}
+.appMenuMaintable
+{
+	font-family:tahoma, arial, verdana, sans-serif;
+	font-size:9pt;
+	font-weight:normal;
+}
+.appMenuMaintable a
+{
+	color:white;
+	font-size:95%;
+	font-weight:bold;
+	text-decoration:none;
+}
+.appMenuMaintable a:hover
+{
+	color:#de5b5d;
+	text-decoration:none;
+}
+.appMenuHeadertable
+{
+	font-family:verdana, tahoma, arial, sans-serif;
+	font-size:11pt;
+	font-weight:bold;
+}
+.appMenuHeadertable td
+{
+	height:25px;
+	vertical-align:middle;
+	text-align:center;	
+	border-bottom:solid 1px #993233;	
+	border-top:solid 1px black;
+}
+.appMenuHeadertable td span
+{
+	color:White;
+}
+
+.appMenuFootertable
+{
+	font-family:tahoma, arial, verdana, sans-serif;
+	font-size:8pt;
+	font-weight:normal;
+}
+.appMenuFootertable td
+{
+	height:25px;
+	vertical-align:middle;
+	text-align:center;	
+	border-bottom:solid 1px black;	
+	border-top:solid 1px #993233;
+}
+
+.appMenuFootertable a
+{
+	color:white;
+	font-size:96%;
+	font-weight:bold;
+	text-decoration:none;
+}
+.appMenuFootertable a:hover
+{
+	color:#de5b5d;
+	text-decoration:none;
+}
+
+.theprntlinktbl
+{
+	font-family:Tahoma, Verdana, Arial, Sans-Serif;
+	font-size:9pt;
+}
+.theprntlinktbl a
+{
+	font-size:98%;
+	text-decoration:none;
+	color:blue;
+}
+.theprntlinktbl a:hover
+{
+	text-decoration:underline;	
+}
+
+/* Classes added for fixing differences in browsers display*/
+
+.GridItem
+{
+	font-family:tahoma;
+	font-size:8pt;
+	height:21px;
+	vertical-align:top;
+}
+
+.LinkButton
+{
+    background-color:#a9a9a9;
+    width:60px;
+    text-align:center;  
+}
+.aformat
+{
+	font-family:Tahoma, Verdana, Arial, Sans-Serif; 
+	font-size:9pt;
+	text-decoration:none;
+	color:black;
+}
+.attstyle
+{
+	border: dashed 1px #6e639c;
+	padding: 5px 5px 5px 5px;
+	margin: 0px 0px 0px 0px;
+	background: #efefee;
+}
+.attstyle SPAN A
+{
+	color: blue;
+	text-decoration: underline;
+}	
+.studentListDet
+{
+	height:400px;
+	overflow:auto;
+}
+.GridHeaderStyle
+{
+	font-family:Verdana,Arial,Tahoma,Sans-Serif;
+	font-size:8pt;
+	font-weight:bold;
+	color:white;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+.lnkbtn
+{
+	font-family:Tahoma, Sans-Serif, Verdana, Arial;
+	font-size:8pt;
+	color:blue;
+}
+.clr_panel
+{
+	clear: both;
+}
+.semestersBox
+{
+	border:1px solid #aaad9c;
+	width:265px;
+}
+
+.nsmalltahoma222
+{
+	font-family:Tahoma, Sans-Serif, Verdana, Arial;
+	font-size:8pt;
+	width:222px;
+}
+.nsmalltahoma228
+{
+	font-family:Tahoma, Sans-Serif, Verdana, Arial;
+	font-size:8pt;
+	width:228px;
+}
+.nsmalltahoma206
+{
+	font-family:Tahoma, Sans-Serif, Verdana, Arial;
+	font-size:8pt;
+	width:206px;
+}
+.nsmalltahoma415
+{
+	font-family:Tahoma, Sans-Serif, Verdana, Arial;
+	font-size:8pt;
+	width:415px;
+}
+.nsmalltahoma480
+{
+	font-family:Tahoma, Sans-Serif, Verdana, Arial;
+	font-size:8pt;
+	width:480px;
+}
+.bsmalltahoma480
+{
+	font-family:Tahoma, Sans-Serif, Verdana, Arial;
+	font-size:8pt;
+	width:480px;
+	font-weight:bold;
+}
+.nsmalltahoma136
+{
+	font-family:Tahoma, Sans-Serif, Verdana, Arial;
+	font-size:8pt;
+	width:136px;
+}
+.nsmalltahoma100
+{
+	font-family:Tahoma, Sans-Serif, Verdana, Arial;
+	font-size:8pt;
+	width:100px;
+}
+.nsmalltahoma120
+{
+	font-family:Tahoma, Sans-Serif, Verdana, Arial;
+	font-size:8pt;
+	width:120px;
+}
+.bsmalltahoma500
+{
+	font-family:Tahoma, Sans-Serif, Verdana, Arial;
+	font-size:8pt;
+	width:500px;
+	font-weight:bold;
+}
+.nsmalltahoma500
+{
+	font-family:Tahoma, Sans-Serif, Verdana, Arial;
+	font-size:8pt;
+	width:500px;
+}
+.nsmalltahoma382
+{
+	font-family:Tahoma, Sans-Serif, Verdana, Arial;
+	font-size:8pt;
+	width:382px;
+}
+.nsmalltahoma360
+{
+	font-family:Tahoma, Sans-Serif, Verdana, Arial;
+	font-size:8pt;
+	width:360px;
+}
+.nsmalltahoma578
+{
+	font-family:Tahoma, Sans-Serif, Verdana, Arial;
+	font-size:8pt;
+	width:578px;
+}
+.nsmalltahoma189
+{
+	font-family:Tahoma, Sans-Serif, Verdana, Arial;
+	font-size:8pt;
+	width:189px;
+}
+.nsmalltahoma70
+{
+	font-family:Tahoma, Sans-Serif, Verdana, Arial;
+	font-size:8pt;
+	width:70px;
+}
+.nsmalltahoma80
+{
+	font-family:Tahoma, Sans-Serif, Verdana, Arial;
+	font-size:8pt;
+	width:80px;
+}
+
+.paddingleft5
+{
+	padding-left:5px;
+}
+.paddingleft10
+{
+	padding-left:10px;
+}
+.paddingtop3
+{
+	padding-top:3px;
+}
+
+.marginleft5
+{
+	margin-left:5px;
+}
+
+
+.TablePrint
+{
+    width: 600px;
+    padding: 0px 0px 0px 0px;
+    border-collapse: collapse;   
+    text-align: left;    
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fafafa;
+}
+.PadLeft10
+{
+	padding-left :10px;
+}
+
+.infostyle
+{
+	font-family: Verdana, Arial, Tahoma, Sans-Serif;
+	font-size: 8pt;
+	border: dashed 1px #6e639c;
+	padding: 8px 8px 8px 8px;
+	margin: 0px 0px 0px 0px;
+	background: #efefee;
+}
+.lblGStyle
+{
+	font-family:Verdana,Arial,Tahoma,Sans-Serif;
+	font-size:8pt;
+}
+.lnkprint
+{
+	font-family:tahoma,verdana,arial;
+	font-size:8pt;
+	font-weight:bold;
+	color:#242424;
+	text-decoration:none;
+}
+.lnkprint:hover
+{
+	text-decoration:underline;
+}
+.sgApply{
+	border: dashed 1px #6e639c;
+	background-color: #efefee;
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+.sgApply a{
+	color: #323232;
+	text-decoration: underline;
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+.paddingsall
+{
+	padding: 5px 5px 5px 5px;
+	margin: 0px 0px 0px 0px;
+}
+.precalc{
+	border: dashed 1px #6e639c;
+	padding: 5px 5px 5px 5px;
+	margin: 0px 0px 0px 0px;
+	background: white;
+}
+
+.AppSectionStyle
+{
+	color:#A20133;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight:bold;
+	padding-bottom:6px;
+}

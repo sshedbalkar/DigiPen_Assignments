@@ -1,0 +1,5 @@
+echo Compile all with C
+Compile all with C
+gcc -c splitter.c -Wall -Wextra -ansi -pedantic
+gcc -c driver.c -Wall -Wextra -ansi -pedantic
+gcc -o gcc0.exe splitter.o driver.o -Wall -Wextra -ansi -pedantic

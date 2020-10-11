@@ -1,0 +1,17 @@
+10 
+gcc_c 8
+msc_cpp 0
+bcc_c_cpp 4
+test0 3
+test1 3
+test2 3
+test3 3
+test4 3
+test5 3
+test6 3
+test7 3
+test8 3
+test9 3
+test105 10
+test106 6
+test107 15

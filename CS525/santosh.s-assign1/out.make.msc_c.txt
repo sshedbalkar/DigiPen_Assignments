@@ -1,0 +1,28 @@
+echo compile all with C
+compile all with C
+cl /D  "_CRT_SECURE_NO_DEPRECATE" /W4 /Za /TC splitter.c /c
+Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.21022.08 for 80x86
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+splitter.c
+C:\Program Files\Microsoft Visual Studio 9.0\VC\INCLUDE\sal.h(108) : warning C4001: nonstandard extension 'single line comment' was used
+c:\cygwin\home\dvolper\grading\225\assign1\b\santosh.s\splitter.c(37) : warning C4706: assignment within conditional expression
+c:\cygwin\home\dvolper\grading\225\assign1\b\santosh.s\splitter.c(69) : warning C4706: assignment within conditional expression
+c:\cygwin\home\dvolper\grading\225\assign1\b\santosh.s\splitter.c(163) : warning C4706: assignment within conditional expression
+c:\cygwin\home\dvolper\grading\225\assign1\b\santosh.s\splitter.c(190) : warning C4706: assignment within conditional expression
+cl /D  "_CRT_SECURE_NO_DEPRECATE" /W4 /Za /TC driver.c /c
+Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.21022.08 for 80x86
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+driver.c
+C:\Program Files\Microsoft Visual Studio 9.0\VC\INCLUDE\sal.h(108) : warning C4001: nonstandard extension 'single line comment' was used
+cl /W4 /Femsc0.exe splitter.obj driver.obj
+Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.21022.08 for 80x86
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+Microsoft (R) Incremental Linker Version 9.00.21022.08
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:msc0.exe 
+splitter.obj 
+driver.obj 

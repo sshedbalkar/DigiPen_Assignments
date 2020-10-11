@@ -1,0 +1,13 @@
+echo Code Guard 
+Code Guard
+bcc32 -v -vG -ebcc_cg.exe driver.c splitter.c
+Borland C++ 5.82 for Win32 Copyright (c) 1993, 2005 Borland
+driver.c:
+splitter.c:
+Warning W8060 splitter.c 37: Possibly incorrect assignment in function SplitFile
+Warning W8060 splitter.c 69: Possibly incorrect assignment in function SplitFile
+Warning W8004 splitter.c 24: 'bytes_read' is assigned a value that is never used in function SplitFile
+Warning W8060 splitter.c 163: Possibly incorrect assignment in function JoinFiles
+Warning W8060 splitter.c 190: Possibly incorrect assignment in function JoinFiles
+Warning W8004 splitter.c 150: 'bytes_read' is assigned a value that is never used in function JoinFiles
+Turbo Incremental Link 5.69 Copyright (c) 1997-2005 Borland
